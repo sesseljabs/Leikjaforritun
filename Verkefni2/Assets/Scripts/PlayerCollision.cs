@@ -15,7 +15,10 @@ public class PlayerCollision : MonoBehaviour
             Debug.Log(col.collider.tag);
             Destroy(col.collider.gameObject); // eyðir krónunni
             score++; // hækkar score
-
+            if(score > 5)
+            {
+                FindObjectOfType<GameManager>().CompleteLevel();
+            }
         }
         scoretext.text = score.ToString(); // setur töluna á textann
         if (col.collider.tag == "Done") // ef taggað sem "done"

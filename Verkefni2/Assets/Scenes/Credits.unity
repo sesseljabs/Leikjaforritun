@@ -530,7 +530,6 @@ GameObject:
   - component: {fileID: 1062395009}
   - component: {fileID: 1062395008}
   - component: {fileID: 1062395007}
-  - component: {fileID: 1062395011}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -613,7 +612,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1062395011}
+      - m_Target: {fileID: 2036625317}
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -663,18 +662,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062395005}
   m_CullTransparentMesh: 0
---- !u!114 &1062395011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1062395005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a74856569860994f8662733ce30302a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1607952036
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,6 +821,7 @@ GameObject:
   - component: {fileID: 2036625314}
   - component: {fileID: 2036625316}
   - component: {fileID: 2036625315}
+  - component: {fileID: 2036625317}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -901,6 +889,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036625313}
   m_CullTransparentMesh: 0
+--- !u!114 &2036625317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036625313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c263a7ce0b7dbb34b962facfa6ce84a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2044271576
 GameObject:
   m_ObjectHideFlags: 0
