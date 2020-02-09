@@ -5,23 +5,22 @@ using UnityEngine.UI;
 
 public class PlayerCollision : MonoBehaviour
 {
-    public Text scoretext;
-    public int score = 0;
-    // Start is called before the first frame update
+    public Text scoretext; // score texta objectið
+    public int score = 0; // score talan
+
     void OnCollisionEnter(Collision col)
-    {
-        if(col.collider.tag == "Coin")
+    { // þegar hann klessir á eitthvað
+        if (col.collider.tag == "Coin") // ef það er taggað sem "coin" er bætt við scoreið
         {
             Debug.Log(col.collider.tag);
-            Destroy(col.collider.gameObject);
-            //score++;
-            scoretext.text = "penis";
+            Destroy(col.collider.gameObject); // eyðir krónunni
+            score++; // hækkar score
+
         }
-        if(col.collider.tag == "Done")
+        scoretext.text = score.ToString(); // setur töluna á textann
+        if (col.collider.tag == "Done") // ef taggað sem "done"
         {
-            Debug.Log(col.collider.tag);
-            scoretext.text = "ur gay";
+            FindObjectOfType<GameManager>().CompleteLevel(); // kallar á CompleteLevel í GameManagernum
         }
-        scoretext.text = score.ToString();
     }
 }

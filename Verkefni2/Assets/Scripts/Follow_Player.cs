@@ -6,7 +6,7 @@ public class Follow_Player : MonoBehaviour
     public Vector3 offset;
 
     void Update()
-    {
+    {// breytir staðsetningu hlutarins í staðsetningu kubbsins + ákveðið offset
         transform.position = player.position + offset;
     }
 }
