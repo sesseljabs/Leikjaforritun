@@ -11,6 +11,8 @@ public class ControllerScript : MonoBehaviour
     void Start()
     {
         deathAudio = GetComponent<AudioSource>();
+        Cursor.visible = false;
+        Screen.lockCursor = true;
     }
     public void PlayOof()
     {

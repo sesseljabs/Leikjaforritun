@@ -16,9 +16,10 @@ public class ScoreCount : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         Destroy(gameObject);
-        if (col.gameObject.tag == "Obstacle") {
+        if (col.gameObject.tag == "Obstacle" || col.gameObject.tag == "goldcube") {
             FindObjectOfType<ControllerScript>().score++;
             counter++;
+            if(col.gameObject.tag == "goldcube") { FindObjectOfType<ControllerScript>().score+=2; counter+=2; }
             score.text = counter.ToString();
             Destroy(col.gameObject);
         }
