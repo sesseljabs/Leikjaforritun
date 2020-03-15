@@ -63,6 +63,7 @@
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Scripts\CharacterManager.cs" />
      <Compile Include="Assets\Scripts\ControllerScript.cs" />
+     <Compile Include="Assets\Scripts\DeathRestart.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\ScoreCount.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />

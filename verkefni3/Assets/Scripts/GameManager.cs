@@ -13,11 +13,11 @@ public class GameManager : MonoBehaviour
             gamehasended = true;
             FindObjectOfType<ControllerScript>().PlayOof();
             Debug.Log("Game over");
-            Invoke("Restart", 2f);
+            Restart();
         }
     }
-    void Restart()
+    public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 }

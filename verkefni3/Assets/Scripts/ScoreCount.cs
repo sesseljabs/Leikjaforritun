@@ -17,8 +17,10 @@ public class ScoreCount : MonoBehaviour
     {
         Destroy(gameObject);
         if (col.gameObject.tag == "Obstacle") {
+            FindObjectOfType<ControllerScript>().score++;
             counter++;
             score.text = counter.ToString();
+            Destroy(col.gameObject);
         }
     }
 }
