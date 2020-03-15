@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public AudioSource deathAudio;
     void Start()
     {
-        
+        deathAudio = GetComponent<AudioSource>();
+    }
+    
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("penis");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(transform.position.y < 30)
+        {
+            FindObjectOfType<GameManager>().Endgame();
+        }
     }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 5400000}
   - component: {fileID: 8200000}
+  - component: {fileID: 2269371766680734249}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Untagged
@@ -290,6 +291,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &2269371766680734249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cce5431b10fb924b8980f342906a2b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudio: {fileID: 0}
+  clipsound: {fileID: 8300000, guid: ce86c3c4066260e409d0e6031d7c5875, type: 3}
+  pewpew: {fileID: 8300000, guid: 63029a6d0aa592640b2eb2e843b8edcd, type: 3}
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,7 +410,7 @@ GameObject:
   - component: {fileID: 5639103008886037299}
   - component: {fileID: 6120721155866533362}
   - component: {fileID: 489274768914544550}
-  - component: {fileID: 2968883046853394258}
+  - component: {fileID: 3389743368812285111}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -475,7 +491,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2968883046853394258
+--- !u!114 &3389743368812285111
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -484,9 +500,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7112893022482371945}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 231ef7c30adeda949aa4120db2994e13, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f6ceaeeb2279524f919b0b85c48acbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAudio: {fileID: 0}
 --- !u!1 &7584068112606897232
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +517,6 @@ GameObject:
   - component: {fileID: 5063886830183148700}
   - component: {fileID: 1579058092789955903}
   - component: {fileID: 2282038140572094784}
-  - component: {fileID: 6951272560214837388}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -596,15 +612,3 @@ MonoBehaviour:
   moveSpeed: 50000
   projectile: {fileID: 1382967086690755380, guid: ebd141c15a381614aa8ec02af90cb2c1,
     type: 3}
---- !u!114 &6951272560214837388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7584068112606897232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f6ceaeeb2279524f919b0b85c48acbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

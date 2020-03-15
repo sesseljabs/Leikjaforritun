@@ -11,11 +11,12 @@ public class Shoot : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            FindObjectOfType<ControllerScript>().Pew();
             GameObject bullet = Instantiate(projectile, transform.position, Quaternion.identity) as GameObject;
             Rigidbody bulletRB;
             bulletRB = bullet.GetComponent<Rigidbody>();
             bulletRB.AddForce(transform.up * moveSpeed);
-            Destroy(bullet, 10.0f);
+            Destroy(bullet, 5.0f);
         }
     }
 }
