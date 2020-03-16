@@ -9,14 +9,14 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))//ef ýtt er á músina er gerð ný kúla og henni skoitið af stað
         {
             FindObjectOfType<ControllerScript>().Pew();
             GameObject bullet = Instantiate(projectile, transform.position, Quaternion.identity) as GameObject;
             Rigidbody bulletRB;
             bulletRB = bullet.GetComponent<Rigidbody>();
             bulletRB.AddForce(transform.up * moveSpeed);
-            Destroy(bullet, 5.0f);
+            Destroy(bullet, 5.0f); // eyðileggur kúluna eftir 5 sek ef hún er ekki ónýt
         }
     }
 }

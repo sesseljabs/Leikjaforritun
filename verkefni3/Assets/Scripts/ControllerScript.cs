@@ -11,15 +11,15 @@ public class ControllerScript : MonoBehaviour
     void Start()
     {
         deathAudio = GetComponent<AudioSource>();
-        Cursor.visible = false;
+        Cursor.visible = false;//lagar cursor
         Screen.lockCursor = true;
     }
-    public void PlayOof()
+    public void PlayOof()//spilar bara hljóð
     {
         deathAudio.clip = clipsound;
         deathAudio.Play();
     }
-    public void Pew()
+    public void Pew() // spilar líka hljóð
     {
         deathAudio.clip = pewpew;
         deathAudio.Play();

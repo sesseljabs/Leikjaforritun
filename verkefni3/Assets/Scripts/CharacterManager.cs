@@ -9,16 +9,11 @@ public class CharacterManager : MonoBehaviour
     {
         deathAudio = GetComponent<AudioSource>();
     }
-    
-    void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("penis");
-    }
 
     void Update()
     {
         if(transform.position.y < 30)
-        {
+        {// ef hluturinn fer undir hnitið 30 er leikurinn búinn
             FindObjectOfType<GameManager>().Endgame();
         }
     }
