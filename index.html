@@ -1,25 +1,62 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | verkefni4</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">verkefni4</div>
-      </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokaverkefni</title>
+    <style>
+        html{
+            background-color: #ffebcd;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            margin: 1em;
+            font-size: 40px;
+        }
+        div {
+            background-color: #f0d2a5;
+            width: fit-content;
+            margin: 3em auto;
+            padding: 0.5em 5em 2em 5em;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: #3d2a2a;
+            font-weight: 600;
+        }
+        a:hover, a:active {
+            color: #000000;
+        }
+        p{
+            text-decoration: underline;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lokaverkefni í leikjaforritun</h1>
+    <div class="1">
+        <h2>Hluti 1</h2>
+        <a href="./web1/index.html">WebGL prototype 1</a>
+        <p>Youtube linkar</p>
+        <a href="">prototype |</a>
+        <a href="">challenge</a>
     </div>
-  </body>
+    <div class="2">
+        <h2>Hluti 2</h2>
+        <a href="./web2/index.html">WebGL prototype 2</a>
+        <p>Youtube linkar</p>
+        <a href="">prototype |</a>
+        <a href="">challenge</a>
+    </div>
+    <div class="3">
+        <h2>Hluti 3</h2>
+        <a href="./web3/index.html">WebGL prototype 3</a>
+        <p>Youtube linkar</p>
+        <a href="">prototype |</a>
+        <a href="">challenge</a>
+    </div>
+</body>
 </html>
